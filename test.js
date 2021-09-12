@@ -51,7 +51,7 @@ let banco = {
          },
 
           deposito : function (titular, saldo) {
-                 for (let i in this.clientes){
+                 for (i in this.clientes){
                          if (this.clientes[i].titular === titular){
                        this.clientes[i].saldo += saldo
                         return `Deposito realizado, seu novo saldo é: ${this.clientes[i].saldo}`;
@@ -60,7 +60,7 @@ let banco = {
             },
 
              saque : function (titular, saque) {
-                     for (let i in this.clientes){
+                     for ( i in this.clientes){
                           if (this.clientes[i].titular === titular){
              
                              if ((this.clientes[i].saldo - saque)< 0){
